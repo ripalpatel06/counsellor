@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html,
+body {
+    height: 100%;
+    background-color: #f9f9f9;
+    color: #777;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.help-block {
+    color: #a94442;
+}
+
+#map-canvas-0 {
+    height: 250px !important;
+}
+
+/**
+ * Layout
+ */
+
+#main {
+    padding-left:0;
+    padding-right:0;
+}
+
+.wrapper,
+.row {
+    height: 100%;
+    margin-left:0;
+    margin-right:0;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+
+.box {
+    bottom: 0; /* increase for footer use */
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.full {
+    width: 100%;
+}
+
+
+/**
+ * Left Menu
+ */
+
+#sidebar {
+    padding: 0;
+    background-color: #495B6C;
+    border-right: 2px solid #415160;
+}
+
+#sidebar,
+#sidebar a,
+#sidebar-footer a {
+    color:#ffffff;
+    text-shadow:0 0 2px #000000;
+}
+
+#sidebar div.list-group a.list-group-item.active {
+    background-color: #415160;
+    border-color: transparent;
+}
+
+#sidebar div.list-group a.list-group-item:hover {
+    background-color: #394754;
+    border-color: transparent;
+}
+
+#sidebar #chevron {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#sidebar #chevron a {
+    padding-top: 15px;
+}
+
+div.menu-title {
+    margin: 0;
+    padding: 15px 0 0 15px;
+    color: #FFFFFF;
+    background-color: #394754;
+    height: 50px;
+    font-size: 1.3em;
+}
+
+/* Create some padding between the icon and the text */
+div.list-group a.list-group-item .menu-icon {
+    width: 25px;
+    display: inline-block;
+}
+
+div.list-group a.list-group-item {
+    margin-top: 1px;
+    border: none;
+    background-color: transparent;
+    color: #e8e8e8;
+    border-top: 1px solid #506274;
+    border-bottom: 1px solid #415160;
+    padding: 10px 0px 10px 8px;
+}
+
+div.list-group a.list-group-item .text {
+    margin-left: 5px;
+    position: relative;
+}
+
+div.list-group a.list-group-item.active {
+    background-color: #415160;
+    border-color: transparent;
+}
+
+div.list-group a.list-group-item:hover {
+    background-color: #394754;
+    border-color: transparent;
+}
+
+.list-group-item:last-child,
+.list-group-item:first-child {
+    border-radius: 0;
+}
+
+/**
+ * Navbar
+ */
+
+.navbar {
+    margin-bottom: 0;
+}
+
+nav.navbar-default {
+    background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand {
+    color: #777777;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #FFFFFF;
+    background-color: #777777;
+}
+
+/**
+ * Grey page menu
+ */
+
+.grey-container {
+    background: #eee;
+    border: 1px solid #dfdfdf;
+    border-width: 1px 0;
+    margin: 25px 0;
+}
+
+.shortcut-link {
+    margin-bottom: -1px;
+    display: inline-block;
+    padding: 5px 15px 3px 15px;
+    color: #ccc;
+    margin-right: 20px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.shortcut-link .shortcut-icon {
+    position: relative;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.shortcut-link .shortcut-icon .shortcut-alert {
+    position: absolute;
+    border-radius: 50em;
+    -moz-border-radius: 50em;
+    -webkit-border-radius: 50em;
+    font-size: 11px;
+    color: #fff;
+    top: 0;
+    right: 0;
+    background: #fc8675;
+    border: 1px solid #fc8675;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 16px;
+    width: 18px;
+    height: 18px;
+    text-align: center
+}
+
+.shortcut-link .text {
+    display: inline-block;
+    margin-top: -5px;
+    color: #626262;
+    font-size: 0.9em;
+}
+
+.shortcut-link:hover,
+.shortcut-link:focus,
+.shortcut-link.active {
+    margin-bottom: -1px;
+    text-decoration: none;
+    color: #ff6666;
+    background-color: #f9f9f9;
+}
+
+/*
+ * Media Queries
+ */
+
+/* adjust the contents on smaller devices */
+@media (max-width: 768px) {
+
+    .column .padding {
+        padding: 7px;
+    }
+
+    .full{
+        padding-top: 0;
+    }
+
+    #sidebar div.list-group.nav.visible-xs a.list-group-item {
+        height: 50px;
+    }
+}
+
+/*
+ * off canvas sidebar
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+    .row-offcanvas {
+        position: relative;
+    }
+
+    .row-offcanvas-left.active {
+        left: 40%;
+    }
+
+    .row-offcanvas-left.active .sidebar-offcanvas {
+        left: -40%;
+        position: absolute;
+        top: 0;
+        width: 40%;
+    }
+}

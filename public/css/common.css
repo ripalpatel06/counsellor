@@ -1,0 +1,81 @@
+/**
+ * Forms
+ */
+
+label {
+    font-weight: normal;
+}
+
+legend {
+    font-size: 1em;
+    color: #777777;
+}
+
+.bg-warning {
+    background-color: #f3ce85;
+    color: #fff
+}
+
+.bg-info {
+    background-color: #6bafbd;
+    color: #fff
+}
+
+.bg-success {
+    background-color: #A1D490;
+    color: #fff
+}
+
+.bg-danger {
+    background-color: #fc8675!important;
+    color: #fff!important
+}
+
+
+.splash {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+.splash span.title {
+    font-size: 1.4em;
+}
+
+.splash .stat-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 30px;
+    opacity: .3
+}
+
+.splash .refresh-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    color: rgba(0, 0, 0, .3)
+}
+
+.splash .refresh-button:hover {
+    color: #fff;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease
+}
+
+span.help-block:empty {
+    display: none;
+}
